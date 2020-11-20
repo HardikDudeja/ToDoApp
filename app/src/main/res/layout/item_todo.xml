@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp">
+
+    <View
+        android:id="@+id/viewColorTag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="TITLE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvTaskSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvTitle"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:text="TASK SUBTITLE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="CATEGORY"
+            android:id="@+id/tvCategory"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvTaskSubtitle"
+            android:text="DATE"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDate"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvDateTitle"
+            android:text="31-10-2020"
+            android:textSize="14sp"
+            android:layout_marginStart="4dp"/>
+
+        <TextView
+            android:id="@+id/tvTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvTaskSubtitle"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:textSize="12sp"
+            android:text="TIME"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvTimeTitle"
+            android:text="10:12 AM"
+            android:layout_marginEnd="4dp"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
